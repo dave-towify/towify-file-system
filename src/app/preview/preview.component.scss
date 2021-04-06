@@ -1,0 +1,39 @@
+@import "~towify-editor-common-values/styles/common.styles";
+
+:host {
+  .previews {
+    display: grid;
+    background-color: #303030;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(5, 200px);
+    align-content: center;
+    justify-content: center;
+    grid-gap: 15px;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 25px 15px;
+
+    .photo {
+      height: 150px;
+      width: 150px;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .name {
+      font-size: 12px;
+      text-align: start;
+      margin-top: 5px;
+      color: white;
+    }
+
+    .size {
+      font-size: 12px;
+      text-align: start;
+      color: $text-content-dark;
+    }
+  }
+}

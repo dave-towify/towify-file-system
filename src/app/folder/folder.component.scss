@@ -1,0 +1,19 @@
+@import "~towify-editor-common-values/styles/common.styles";
+
+:host {
+  ul,
+  li {
+    list-style-type: none;
+    color: white;
+    background-color: $secondary-dark;
+  }
+  ::ng-deep .mat-tree-node {
+    color: white;
+    min-height: 10px;
+  }
+  ::ng-deep .mat-nested-tree-node {
+    color: white;
+    background: $secondary-dark;
+    min-height: 10px;
+  }
+}

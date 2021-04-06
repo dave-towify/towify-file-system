@@ -1,0 +1,110 @@
+@import "~towify-editor-common-values/styles/common.styles";
+
+:host {
+  background-color: #212121;
+
+  .bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .left {
+    display: grid;
+    grid-template-columns: 350px auto;
+  }
+  .right {
+    display: grid;
+    grid-template-columns: auto 200px;
+    justify-items: right;
+  }
+
+  .toolbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+    align-items: center;
+    grid-gap: 30px 30px;
+  }
+
+  ::ng-deep .mat-progress-bar-fill::after {
+    background-color: $primary-spectrum;
+  }
+
+  ::ng-deep .mat-progress-bar-buffer {
+    background: $third-dark;
+  }
+
+  .storage {
+    position: relative;
+    color: white;
+     .usage {
+       position:absolute;
+       left: 15px;
+       top: 10px;
+       color: white;
+       font-size: 14px;
+     }
+    .used {
+      position:absolute;
+      left: 15px;
+      top: 25px;
+      color: #ccc;
+      font-size: 8px
+    }
+    .capacity {
+      position:absolute;
+      right: 15px;
+      top: 10px;
+      color: white;
+      font-size: 14px;
+    }
+    .total {
+      position:absolute;
+      right: 15px;
+      top: 25px;
+      color: #ccc;
+      font-size: 8px;
+    }
+  }
+
+  .button {
+    background-color: #40b870;
+    color: #fff;
+    margin: 10px;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .progress-bar {
+    height: 50px;
+  }
+
+  .toolbar-button {
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
+    column-gap: 5px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 24px auto;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+
+    .mat-icon {
+      font-size: 20px;
+      line-height: 20px;
+      height: 20px;
+      width: 20px;
+    }
+    .label {
+      font-size: 12px;
+      line-height: 20px;
+      color: white;
+    }
+  }
+
+}

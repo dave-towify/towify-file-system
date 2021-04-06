@@ -1,0 +1,26 @@
+<div class="bar">
+  <div class="left">
+    <div class="storage">
+      <mat-progress-bar class='progress-bar' mode="determinate" value="50"></mat-progress-bar>
+      <div class="usage">512 M</div>
+      <div class="used">Used</div>
+      <div class="capacity"> 1 GB</div>
+      <div class="total"> Total</div>
+    </div>
+    <div></div>
+  </div>
+  <div class="right">
+    <div></div>
+    <div class="toolbar">
+      <div class="toolbar-button" matRipple>
+        <div class="mat-icon" [innerHTML]="iconFilter.svgHtml"></div>
+        <div class="label">All Files</div>
+      </div>
+      <div class="toolbar-button" matRipple>
+        <div class="mat-icon" [innerHTML]="iconSort.svgHtml"></div>
+        <div class="label">Descending</div>
+      </div>
+      <div class="button">+ Upload File</div>
+    </div>
+  </div>
+</div>
